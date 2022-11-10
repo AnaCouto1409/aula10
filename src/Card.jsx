@@ -3,7 +3,8 @@
 export function Card () {
   return (
     <div>
-
+       <h1>Produtos</h1>
+        <button>Adicionar novo produto</button>
     </div>
   )
 }
