@@ -17,6 +17,7 @@ function App() {
   const [textoAnotacao, setTextoAnotacao,] = useState("");
   const [corAnotacao, setCorAnotacao] = useState("");
   const [listaAnotacao, setListaAnotacao] = useState([]);
+  const [email, setEmail] = useState ("");
 
   function adicionarAnotacao(event){
     event.preventDefault();
@@ -62,15 +63,15 @@ const newProduct = {
     <div className="App">
      <h1>Adicionar uma nova anotação</h1>
      <fieldset>
-     <form onSubmit={event => adicionarAnotacao(event)}>
+     <form class="menu" onSubmit={event => adicionarAnotacao(event)}>
         <label htmlFor="anotacao"></label>
-        <input id="anotacao"></input></form>
+        <input id="anotacao" /></form>
         <form>
           <h1>Escreva uma nota Habilidade</h1>
         <label htmlFor="email"></label>
-        <input id="email"></input></form>
+        <input id="email" onChange={event =>setEmail(event.target.value)} /></form>
         </fieldset>
-        <button ></button>
+        <button type="onSubmit">Clica aí</button>
         </div>
         
         )}

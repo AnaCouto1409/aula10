@@ -24,3 +24,13 @@ button {
   transition: 0.2s ease-in-out;
 
 }
+.menu{
+  width: 1100px;
+  background-color: #202020;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 50px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
